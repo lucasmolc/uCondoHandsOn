@@ -29,7 +29,7 @@ namespace HandsOnUCondo.Login
                 try
                 {
                     FormsAuthentication.SetAuthCookie(uname, false);
-                    Response.Redirect("~/Usuarios");
+                    Response.Redirect("~/Home");
                 }
                 catch (Exception)
                 {

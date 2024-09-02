@@ -3,40 +3,25 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+        <section class="row" aria-labelledby="pageTitle">
+            <h1 id="pageTitle">HandsOn uCondo - Lucas Mol</h1>
+            <p class="lead">Projeto criado para a terceira etapa do processo seletivo da uCondo!</p>
+            <p style="font-size: small;">O projeto pode ser acessado através do GitHub! Solicite ao criador que o adicione como colaborador.</p>
+            <p><a href="https://github.com/lucasmolc/uCondoHandsOn" class="btn btn-md" style="background-color: rgb(135,113,209)">Github &raquo;</a></p>
         </section>
 
         <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <section class="col-md-12" aria-labelledby="gettingStartedTitle">
                 <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
+                <ul style="list-style-type: disclosure-closed">
+                    <li>O projeto consiste das seguintes telas: Login, Usuários e Controle Financeiro.</li>
+                    <li>O Login é realizado por 'E-Mail' e 'Senha' (Senha criptografada utilizando MD5Security).</li>
+                    <li>Na tela de usuários é possivel cadastrar novos usuários, editar e excluir. Esta tela só é acessada após o usuario se autenticar na tela de Login.</li>
+                    <li>Na tela de Controle Financeiro, pode cadastrar novos lançamentos de Receita (Saldo Positivo) e lançamentos de Despesas (Saldo Negativo). Estes lançamentos devem conter:<br />
+                        Data de Vencimento, Valor, Descrição, Status (Aberto ou Quitado), Periodicidade (Unica ou Mensal. Mensal deve se repetir no mesmo dia todo mês por pelo menos 24 meses).
+                        <br />Na tela também contém um filtro onde o usuário pode selecionar todas receitas e despesas do mês ou dia selecionado.</li>
+                    <li>Técnologias utilizadas: ASP.NET, C#, MasterPages, HTML, Bootstrap, JavaScript, CSS e SQLServer</li>
+                </ul>
             </section>
         </div>
     </main>
