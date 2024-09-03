@@ -23,11 +23,24 @@ namespace HandsOnUCondo
         {
             // Verify if all fields are filled
             if (string.IsNullOrEmpty(tbName.Text) && string.IsNullOrEmpty(tbMail.Text) && string.IsNullOrEmpty(tbCPF.Text) && string.IsNullOrEmpty(tbPassword.Text))
+            {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Alert Message", "alert('Todos os campos devem ser preenchidos para cadastro!')", true);
+                return;
+            }
 
             // Verify if e-mail is valid
-            if (!Classes.Util.isMail(tbMail.Text))
+            if (!Util.isMail(tbMail.Text))
+            {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Alert Message", "alert('E-mail inválido!')", true);
+                return;
+            }
+
+            // Verify if CPF is valid
+            if (!Util.isCPF(tbCPF.Text))
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Alert Message", "alert('CPF inválido!')", true);
+                return;
+            }
 
             // Register user in database
             User user = new User();
