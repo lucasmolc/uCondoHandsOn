@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label class="text-black fw-semibold" for="nameField">Nome</label>
                                 <div class="input-group">
@@ -31,19 +31,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label class="text-black fw-semibold" for="mailField">E-Mail</label>
                                 <div class="input-group">
-                                    <asp:TextBox ID="tbMail" CssClass="form-control rounded-2" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="tbMail" CssClass="form-control rounded-2" TextMode="Email" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label class="text-black fw-semibold" for="cpfField">CPF</label>
                                 <div class="input-group">
                                     <asp:TextBox ID="tbCPF" CssClass="form-control rounded-2" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label class="text-black fw-semibold" for="passwordField">Senha</label>
+                                <div class="input-group">
+                                    <asp:TextBox ID="tbPassword" CssClass="form-control rounded-2" TextMode="Password" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

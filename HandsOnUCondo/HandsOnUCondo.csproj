@@ -127,10 +127,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Home\Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Login\Assets\background_pattern.png" />
     <Content Include="Login\Assets\login.css" />
     <Content Include="Login\Assets\login.js" />
     <Content Include="Login\Default.aspx" />
     <Content Include="Login\Logout\Default.aspx" />
+    <Content Include="Login\Register\Default.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -227,6 +229,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login\Logout\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Register\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Register\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

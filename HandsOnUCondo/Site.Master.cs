@@ -20,7 +20,7 @@ namespace HandsOnUCondo
                 User usu = new User();
                 usu.Get(_userId);
 
-                lblWelcome.Text = "Bem-vindo, " + usu.UserName.SubstringUpToFirst(' ') + "!";
+                lblWelcome.Text = "Bem-vindo(a), " + usu.UserName.SubstringUpToFirst(' ') + "!";
             }
             else
                 Response.Redirect("~/Login/Logout/");

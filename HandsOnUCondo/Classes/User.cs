@@ -27,7 +27,6 @@ namespace HandsOnUCondo.Classes
         {
             try
             {
-                string defaultPassword = "default123";
                 SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                 SqlCommand cmd = new SqlCommand("UsuarioAdd");
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -36,7 +35,7 @@ namespace HandsOnUCondo.Classes
                 cmd.Parameters.AddWithValue("@UserName", UserName);
                 cmd.Parameters.AddWithValue("@UserMail", UserMail);
                 cmd.Parameters.AddWithValue("@UserCPF", UserCPF);
-                cmd.Parameters.AddWithValue("@UserPassword", Util.Md5("handsOn" + defaultPassword + "2o!4"));
+                cmd.Parameters.AddWithValue("@UserPassword", Util.Md5("handsOn" + UserPassword + "2o!4"));
 
                 sqlConnection.Open();
                 UserId = Convert.ToInt32(cmd.ExecuteScalar());
@@ -101,6 +100,21 @@ namespace HandsOnUCondo.Classes
             cmd.Parameters.AddWithValue("@UserName", UserName);
             cmd.Parameters.AddWithValue("@UserMail", UserMail);
             cmd.Parameters.AddWithValue("@UserCPF", UserCPF);
+
+            sqlConnection.Open();
+            cmd.ExecuteScalar();
+            sqlConnection.Close();
+        }
+
+        public void UpdatePassword()
+        {
+            SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("UsuarioUpdatePassword");
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Connection = sqlConnection;
+
+            cmd.Parameters.AddWithValue("@UserId", UserId);
+            cmd.Parameters.AddWithValue("@UserPassword", Util.Md5("handsOn" + UserPassword + "2o!4"));
 
             sqlConnection.Open();
             cmd.ExecuteScalar();

@@ -41,5 +41,10 @@ namespace HandsOnUCondo.Login
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Alert Message", "alert('Usuário ou senha não conferem.')", true);
             }
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login/Register");
+        }
     }
 }

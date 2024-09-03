@@ -22,7 +22,7 @@ namespace HandsOnUCondo
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             // Verify if all fields are filled
-            if (string.IsNullOrEmpty(tbName.Text) && string.IsNullOrEmpty(tbMail.Text) && string.IsNullOrEmpty(tbCPF.Text))
+            if (string.IsNullOrEmpty(tbName.Text) && string.IsNullOrEmpty(tbMail.Text) && string.IsNullOrEmpty(tbCPF.Text) && string.IsNullOrEmpty(tbPassword.Text))
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Alert Message", "alert('Todos os campos devem ser preenchidos para cadastro!')", true);
 
             // Verify if e-mail is valid
@@ -34,6 +34,7 @@ namespace HandsOnUCondo
             user.UserName = tbName.Text;
             user.UserMail = tbMail.Text;
             user.UserCPF = tbCPF.Text;
+            user.UserPassword = tbPassword.Text;
             user.Add();
 
             // Clear fields after registration
@@ -77,6 +78,13 @@ namespace HandsOnUCondo
             usu.UserCPF = tbCPF.Text;
             // Call the Update method of the User object to update the user's information in the database
             usu.Update();
+
+            // If password filled, update it
+            if (!string.IsNullOrEmpty(tbPassword.Text))
+            {
+                usu.UserPassword = tbPassword.Text;
+                usu.UpdatePassword();
+            }
 
             // Call the Refresh method to refresh the page
             Refresh();
