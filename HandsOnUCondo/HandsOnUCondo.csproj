@@ -102,9 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\icons\calendar.png" />
     <Content Include="assets\icons\logout.png" />
     <Content Include="assets\logo.png" />
-    <Content Include="ControleFinanceiro.aspx" />
     <Content Include="assets\icons\favicon.jpg" />
     <Content Include="assets\icons\home.png" />
     <Content Include="assets\icons\profile.png" />
@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="FinanceControl\Default.aspx" />
     <Content Include="Home\Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login\Assets\background_pattern.png" />
@@ -197,16 +198,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Classes\Status.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Util.cs" />
-    <Compile Include="ControleFinanceiro.aspx.cs">
-      <DependentUpon>ControleFinanceiro.aspx</DependentUpon>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="FinanceControl\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControleFinanceiro.aspx.designer.cs">
-      <DependentUpon>ControleFinanceiro.aspx</DependentUpon>
+    <Compile Include="FinanceControl\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Home\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -270,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="FinanceControl\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

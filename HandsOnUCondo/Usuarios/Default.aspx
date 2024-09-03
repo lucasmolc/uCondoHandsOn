@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Usuarios" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HandsOnUCondo.Usuarios" %>
+﻿<%@ Page Title="Usuarios - HandsOn" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HandsOnUCondo.Usuarios" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <html xmlns="http://www.w3.org/1999/xhtml">
