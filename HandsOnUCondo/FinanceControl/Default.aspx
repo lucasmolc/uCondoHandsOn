@@ -105,7 +105,7 @@
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label class="text-black fw-semibold" for="passwordField">Dt. Expiração</label>
+                                            <label class="text-black fw-semibold" for="passwordField">Dt. Vencimento</label>
                                             <div class="input-group">
                                                 <asp:TextBox ID="tbExpiration" TextMode="Date" CssClass="form-control rounded-2" runat="server"></asp:TextBox>
                                             </div>
