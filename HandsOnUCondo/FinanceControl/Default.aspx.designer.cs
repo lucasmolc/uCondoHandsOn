@@ -15,85 +15,49 @@ namespace HandsOnUCondo
     {
 
         /// <summary>
-        /// tbIdFinances control.
+        /// tbIdFinancesFilter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbIdFinances;
+        protected global::System.Web.UI.WebControls.TextBox tbIdFinancesFilter;
 
         /// <summary>
-        /// tbDescription control.
+        /// tbDescriptionFilter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbDescription;
+        protected global::System.Web.UI.WebControls.TextBox tbDescriptionFilter;
 
         /// <summary>
-        /// ddlStatus control.
+        /// ddlStatusFilter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStatusFilter;
 
         /// <summary>
-        /// tbExpirationDate1 control.
+        /// tbExpirationDate1Filter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbExpirationDate1;
+        protected global::System.Web.UI.WebControls.TextBox tbExpirationDate1Filter;
 
         /// <summary>
-        /// iBtnFrom control.
+        /// tbExpirationDate2Filter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton iBtnFrom;
-
-        /// <summary>
-        /// ExpirationDate1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar ExpirationDate1;
-
-        /// <summary>
-        /// tbExpirationDate2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbExpirationDate2;
-
-        /// <summary>
-        /// iBtnUntil control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton iBtnUntil;
-
-        /// <summary>
-        /// ExpirationDate2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar ExpirationDate2;
+        protected global::System.Web.UI.WebControls.TextBox tbExpirationDate2Filter;
 
         /// <summary>
         /// btnFilter control.
@@ -114,40 +78,58 @@ namespace HandsOnUCondo
         protected global::System.Web.UI.WebControls.TextBox tbId;
 
         /// <summary>
-        /// tbName control.
+        /// ddlStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbName;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
 
         /// <summary>
-        /// tbMail control.
+        /// tbDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbMail;
+        protected global::System.Web.UI.WebControls.TextBox tbDescription;
 
         /// <summary>
-        /// tbCPF control.
+        /// tbValue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbCPF;
+        protected global::System.Web.UI.WebControls.TextBox tbValue;
 
         /// <summary>
-        /// tbPassword control.
+        /// tbExpiration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
+        protected global::System.Web.UI.WebControls.TextBox tbExpiration;
+
+        /// <summary>
+        /// tbPeriod control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbPeriod;
+
+        /// <summary>
+        /// ddlType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlType;
 
         /// <summary>
         /// btnRegister control.

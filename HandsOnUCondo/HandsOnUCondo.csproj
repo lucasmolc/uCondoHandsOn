@@ -198,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Classes\Finance.cs" />
     <Compile Include="Classes\Status.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Util.cs" />

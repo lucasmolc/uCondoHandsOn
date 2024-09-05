@@ -41,5 +41,32 @@ namespace HandsOnUCondo.Classes
 
             return statusList;
         }
+
+        public List<Status> GetStatusToRegister()
+        {
+            List<Status> statusList = new List<Status>();
+
+            using (SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Status WHERE Id in (1,2) ");
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = sqlConnection;
+
+                sqlConnection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Status status = new Status();
+                    status.IdStatus = Convert.ToInt32(reader["Id"]);
+                    status.StatusName = reader["Status"].ToString();
+                    statusList.Add(status);
+                }
+
+                reader.Close();
+            }
+
+            return statusList;
+        }
     }
 }
